@@ -32,7 +32,7 @@ The model is used to predict the labeled test image. One output image sample alo
 3. Users can also increase the epoch value and the input image shape if they have sufficient computing power.
 4. If users want the script to extract the image(or any other queries), they can reach out to the following email: projectmacine785@gmail.com
 5. code to load model:
-      my_model = keras.models.load_model('path to pretrained weights', custom_objects = {"dice_coef":dice_coef(), "dice_coef_loss": dice_coef_loss()}
+      my_model = keras.models.load_model('path to pretrained weights', custom_objects = {"dice_coef":dice_coef, "dice_coef_loss": dice_coef_loss}, compile=True, options=None)
 
 ## References:,
 1. Link to the original unet paper: <a href = "https://arxiv.org/abs/1505.04597" target = "_blank">click here</a>
